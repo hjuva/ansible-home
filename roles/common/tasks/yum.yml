@@ -1,0 +1,9 @@
+- yum: name=epel-release
+- yum: name=xorg-x11-xauth
+- yum: name=telnet
+- yum: name=gedit
+- yum: name=wget
+- yum: name=ftp
+- yum: name=curl
+- yum: name=sshpass
+- yum: name=bash-completion

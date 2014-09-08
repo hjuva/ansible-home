@@ -1,0 +1,4 @@
+---
+- include: hostservers.yml
+- include: appservers.yml
+- include: proxyservers.yml

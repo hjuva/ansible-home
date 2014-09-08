@@ -1,0 +1,14 @@
+- include: yum.yml
+  sudo: yes
+  tags:
+    - yum
+
+- include: ntp.yml
+  sudo: yes
+  tags:
+    - ntp
+
+- include: vnc.yml
+  sudo: yes
+  tags:
+    - vnc

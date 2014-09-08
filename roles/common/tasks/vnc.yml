@@ -1,0 +1,13 @@
+---
+
+- yum: name=tigervnc-server
+
+- copy: src=vncserver.service dest=/etc/systemd/system/vncserver@:4.service mode=0644
+
+- command: systemctl daemon-reload
+
+- service: name=vncserver@:4.service state=started enabled=yes
+
+- command: firewall-cmd --permanent --zone=public --add-port=5904/tcp
+
+- service: name=firewalld state=restarted

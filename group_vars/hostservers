@@ -1,0 +1,3 @@
+---
+iptables_script: create_iptables-host.sh
+green_ip_interface: br0
