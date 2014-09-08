@@ -4,6 +4,10 @@
   service: name=ntpd state=restarted
   sudo: yes
 
-- name: restart iptables
-  service: name=iptables state=restarted
+- name: restart firewalld
+  service: name=firewalld state=restarted
+  sudo: yes
+
+- name: systemctl daemon-reload
+  command: systemctl daemon-reload
   sudo: yes
